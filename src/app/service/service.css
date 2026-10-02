@@ -1,0 +1,38 @@
+.services-section {
+  background-color: #f1fff8;
+  border-top: 1px solid #dcffe8;
+  border-bottom: 1px solid #dcffe8;
+}
+
+.services-heading {
+  font-size: 1.7rem;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+
+.services-intro {
+  color: #666;
+  line-height: 1.6;
+  max-width: 320px;
+}
+
+.service-row {
+  padding: 1.4rem 0 1.4rem 1.2rem;
+  border-left: 3px solid #dcffef;
+  margin-bottom: 1.2rem;
+  transition: border-color 0.2s ease;
+}
+
+.service-row:hover {
+  border-left-color: #0f5e52;
+}
+
+.service-title {
+  color: #222;
+  margin-bottom: 0.4rem;
+}
+
+.service-desc {
+  color: #666;
+  margin: 0;
+}

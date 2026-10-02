@@ -1,0 +1,23 @@
+<section id="service" class="py-5 services-section">
+  <div class="container py-5">
+    <div class="row g-5">
+      <div class="col-lg-4">
+        <p class="eyebrow">// what I do</p>
+        <h2 class="services-heading">Where I can help</h2>
+        <p class="services-intro">
+          So far, I am comfortable with three technologies, and I mainly work with them.
+        </p>
+      </div>
+
+      <div class="col-lg-8">
+        @for (s of services; track s.title) {
+          <div class="service-row">
+            <h5 class="service-title">{{ s.title }}</h5>
+            <p class="service-desc">{{ s.desc }}</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+

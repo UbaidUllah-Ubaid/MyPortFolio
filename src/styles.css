@@ -1,0 +1,102 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Global CSS */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fbfaf8;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Headings */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 700;
+}
+
+
+/* Sections */
+
+section {
+  scroll-margin-top: 76px;
+}
+
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+
+/* Bootstrap Container */
+
+.container {
+  max-width: 1140px;
+}
+
+
+/* Main Button */
+
+.btn-main {
+  background-color: #0f5e52;
+  color: white;
+  border: none;
+  padding: 10px 27px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.btn-main:hover {
+  background-color: #0b463d;
+  color: white;
+  transform: translateY(-1px);
+}
+
+
+/* Outline Button */
+
+.btn-outline-main {
+  background-color: transparent;
+  color: #0f5e52;
+  border: 1.5px solid #cfe6e0;
+  padding: 9px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.btn-outline-main:hover {
+  border-color: #0f5e52;
+  background-color: #e9f4f1;
+  color: #0b463d;
+}
+
+
+/* Small Section Text */
+
+.eyebrow {
+  font-size: 14px;
+  color: #0f5e52;
+  margin-bottom: 6px;
+}

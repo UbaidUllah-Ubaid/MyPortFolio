@@ -1,0 +1,41 @@
+<section id="about" class="py-5 about-section">
+  <div class="container py-5">
+    <div class="row align-items-start g-5">
+      <!-- left: intro -->
+      <div class="col-lg-5">
+        <p class="eyebrow">// about</p>
+        <h2 class="about-heading">A developer who's still building his toolbox.</h2>
+        <p class="about-text">
+          I am interested in web development and enjoy learning how websites and web applications are built. I started with HTML, CSS, and JavaScript, and I am now learning Angular to understand modern frontend development and improve my skills.
+        </p>
+        <p class="about-text">
+          Currently, I am learning <strong>Angular</strong> to build real-world, component-based web applications.
+        </p>
+      </div>
+
+      <!-- right: skill bars -->
+      <div class="col-lg-6">
+        <p class="skills-label">Current skill level</p>
+        @for (s of skills; track s.name) {
+          <div class="skill-item">
+            <div class="d-flex justify-content-between mb-1">
+              <span class="skill-name">{{ s.name }}</span>
+              <span class="skill-percent">{{ s.percent }}%</span>
+            </div>
+            <div class="progress skill-track">
+              <div
+                class="progress-bar skill-fill"
+                role="progressbar"
+                [style.width.%]="s.percent"
+                [attr.aria-valuenow]="s.percent"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              ></div>
+            </div>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+

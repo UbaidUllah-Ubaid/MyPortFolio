@@ -1,0 +1,221 @@
+<section class="contact-section">
+
+  <div class="container">
+
+    <!-- Heading -->
+    <div class="contact-heading">
+      <p>LET'S CONNECT</p>
+
+      <h1>Have a project in mind?</h1>
+
+      <span>
+        I'd love to hear about your idea and help turn it into a
+        clean, modern and user-friendly web experience.
+      </span>
+    </div>
+
+
+    <div class="row g-4">
+
+      <!-- Left Side Information -->
+      <div class="col-lg-5">
+
+        <div class="contact-info">
+
+          <p class="small-title">GET IN TOUCH</p>
+
+          <h2>Let's build something great together.</h2>
+
+          <p class="info-text">
+            Whether you have a new project, an exciting idea, or simply
+            want to connect, I'm always happy to have a conversation.
+          </p>
+
+          <p class="info-text">
+            I'm <strong>Ubaid Ullah</strong>, a Frontend Developer
+            passionate about creating clean, responsive and
+            user-friendly web applications.
+          </p>
+
+
+          <!-- Email -->
+          <div class="info-item">
+
+            <div class="info-icon">
+              <i class="bi bi-envelope"></i>
+            </div>
+
+            <div>
+              <small>Email</small>
+              <h5>ubaid3v@gmail.com</h5>
+            </div>
+
+          </div>
+
+
+          <!-- Location -->
+          <div class="info-item">
+
+            <div class="info-icon">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+
+            <div>
+              <small>Location</small>
+              <h5>Pakistan</h5>
+            </div>
+
+          </div>
+
+
+          <!-- Availability -->
+          <div class="info-item">
+
+            <div class="info-icon">
+              <i class="bi bi-code-slash"></i>
+            </div>
+
+            <div>
+              <small>Currently</small>
+              <h5>Available for opportunities</h5>
+            </div>
+
+          </div>
+
+
+          <!-- Social Links -->
+          <div class="social-area">
+
+            <p>Connect with me</p>
+
+            <div class="social-links">
+
+              <a href="https://www.linkedin.com/in/ubaid-ullah-ubaid-3ba99a408/" target="_blank">
+                <i class="bi bi-linkedin"></i>
+              </a>
+
+              <a href="https://www.facebook.com/ubaid.hunter.357/" target="_blank">
+                <i class="bi bi-facebook"></i>
+              </a>
+
+              <a href="https://github.com/UbaidUllah-Ubaid" target="_blank">
+                <i class="bi bi-github"></i>
+              </a>
+
+              <a href="https://wa.me/923197272924" target="_blank">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- Right Side Form -->
+      <div class="col-lg-7">
+
+        <div class="contact-form">
+
+          <p class="small-title">SEND A MESSAGE</p>
+
+          <h2>Tell me about your project</h2>
+
+          <p class="form-text">
+            Have a question, project idea or collaboration in mind?
+            Drop me a message and I'll get back to you.
+          </p>
+
+
+          <form>
+
+            <div class="row g-3">
+
+              <!-- Name -->
+              <div class="col-md-6">
+
+                <label for="name">Your Name</label>
+
+                <input type="text" id="name" class="form-control" placeholder="Enter your name" [(ngModel)]="name"
+                  name="name">
+
+              </div>
+
+
+              <!-- Email -->
+              <div class="col-md-6">
+
+                <label for="email">Email Address</label>
+
+                <input type="email" id="email" class="form-control" placeholder="Enter your email" [(ngModel)]="email"
+                  name="email">
+
+              </div>
+
+
+              <!-- Subject -->
+              <div class="col-12">
+
+                <label for="subject">Subject</label>
+
+                <input type="text" id="subject" class="form-control" placeholder="What would you like to discuss?"
+                  [(ngModel)]="subject" name="subject">
+
+              </div>
+
+
+              <!-- Message -->
+              <div class="col-12">
+
+                <label for="message">Your Message</label>
+
+                <textarea id="message" class="form-control" rows="6"
+                  placeholder="Tell me a little about your project..." [(ngModel)]="message" name="message"></textarea>
+
+              </div>
+
+
+              <div [class.generated-box]="generatedBox">
+                @if (showButton) {
+                <div class="generated-content">
+                  <p>Hello, my name is <strong>{{ formData.name }}</strong> and my email is <strong>{{ formData.email
+                      }}</strong>.
+                    I would like to discuss a project with you help me in that <strong>{{ formData.message }}</strong>.
+                    Please let me know if you are available to discuss this further.
+                    Thanks you...</p>
+                </div>
+
+                <div class="generated-button">
+                  <button class="confirm-btn" (click)="sendMessage()">Confirm & Send <i class="bi bi-whatsapp"></i></button>
+                  <span class="tooltipp">Send on WhatsApp</span>
+                </div>
+                }
+              </div>
+
+
+
+              <!-- Button -->
+              <div class="col-12">
+
+                <button type="submit" class="send-btn" (click)="submitForm()"> Generate Message<i
+                    class="bi bi-arrow-right"></i>
+                </button>
+
+              </div>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
